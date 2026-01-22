@@ -35,11 +35,11 @@ const Notes = () => {
                         <div className="notes_card_btns">
                             <button className="btn btn_primary">
                                 <img src={pencil} alt="" />
-                                <span>TAHRIRLASH</span>
+                                TAHRIRLASH
                             </button>
                             <button className="btn btn_danger">
                                 <img src={trash} alt="" />
-                                <span>O'CHIRISH</span>
+                                O'CHIRISH
                             </button>
                         </div>
                     </div>

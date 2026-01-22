@@ -211,9 +211,7 @@ body {
             background-color: #062833;
         }
 
-        span {
-            color: var(--edit);
-        }
+        color: var(--edit);
     }
 
     &_danger {
@@ -221,9 +219,7 @@ body {
             background-color: #32160e;
         }
 
-        span {
-            color: var(--delete);
-        }
+        color: var(--delete);
     }
 }
 
@@ -240,4 +236,67 @@ body {
     background-color: var(--cardBg);
     box-shadow: var(--shadow);
     border: 1px solid #334155;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0000008C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_card {
+        background: #0D1117;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        &_title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+        }
+
+        &_label {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #09ACDF;
+            background-color: #131A21;
+            padding: 5px 10px;
+            border-radius: 9px 9px 0 0;
+            width: 250px;
+
+            span {
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 100%;
+                color: #09ACDF80;
+            }
+
+            input {
+                background-color: unset;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 100%;
+                color: #fff;
+                margin-top: 5px;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+
+        &_btns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    }
 }
