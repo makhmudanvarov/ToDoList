@@ -2,20 +2,21 @@ import React, { useState } from 'react'
 import uzFlag from '../assets/images/UzFlag.png'
 import ruFlag from '../assets/images/RuFlag.png'
 import searchIcon from '../assets/images/search.svg'
-import backIcon from '../assets/images/back.svg'
+import backIcon from '../assets/images/back.png'
 import clearIcon from '../assets/images/clear.svg'
-import { uz, ru } from '../utils/lang.js'
+import { useTodoStore } from '../store/index.js'
+import { ru, uz } from '../utils/lang.js'
 
 const Nav = () => {
-    const [lang, setLang] = useState(uz)
+    const lang = useTodoStore(state => state.lang)
+    const setLang = useTodoStore(state => state.setLang)
     const [active, setActive] = useState(false)
     const [search, setSearch] = useState(false)
-
+    
     const changeActive = (str) => {
         setActive(!active)
         setLang(str == 'uz' ? uz : ru)
     }
-
     return (
         <>
             <nav className="nav">

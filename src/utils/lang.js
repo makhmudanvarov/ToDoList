@@ -1,9 +1,35 @@
 export const uz = {
-    navTitle: 'Eslatmalar',
-    search: 'Qidiruv...'
+    navTitle: "Eslatmalar",
+    allNotes: "Barcha eslatmalar",
+    changeNote: "Eslatmalarni tahrirlash",
+    addNote: "Eslatmalarni qo'shish",
+    change: "Tahrirlash",
+    add: "Qo'shish",
+    list: "Ro'yxat",
+    grid: "Jadval",
+    edit: "Tahrirlash",
+    delete: "O'chirish",
+    search: "Qidiruv...",
+    noNotes: 'Eslatmalar mavjud emas!',
+    noteTitle: 'Sarlavha',
+    noteText: 'Matn',
+    noteCancel: 'Bekor qilish',
 }
 
 export const ru = {
-    navTitle: 'Заметки',
-    search: 'Поиск...'
+    navTitle: "Заметки",
+    allNotes: "Все заметки",
+    addNote: "Добавить заметки",
+    changeNote: "Редактировать заметки",
+    change: "Редактировать",
+    add: "Добавить",
+    list: "Список",
+    grid: "Таблица",
+    edit: "Редактировать",
+    delete: "Удалить",
+    search: "Поиск...",
+    noNotes: 'Никаких заметок нет!',
+    noteTitle: 'Заголовок',
+    noteText: "Текст",
+    noteCancel: 'Отменить',
 }

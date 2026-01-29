@@ -89,6 +89,13 @@ body {
     }
 }
 
+.nav_back {
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 .notes {
     &_box {
         display: grid;
@@ -299,4 +306,9 @@ body {
             margin-top: 20px;
         }
     }
+}
+
+.noNote {
+    margin-top: 50px;
+    text-align: center;
 }
